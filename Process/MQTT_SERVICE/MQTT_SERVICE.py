@@ -24,7 +24,7 @@ topic_to_flag = {
 }
 
 # Common flag file path
-common_flag_file = "/home/karim/Desktop/Process/MQTT_SERVICE/common_flag.txt"
+common_flag_file = "/home/moustafa/Desktop/process/Process/MQTT_SERVICE/common_flag.txt"
 
 class MessagePublisher(dbus.service.Object):
     def __init__(self, bus_name):
@@ -55,7 +55,7 @@ def on_message(client, userdata, msg):
         file_name = topic_to_filename.get(msg.topic, "unknown_topic.hex")
 
         # Specify the path to save the received binary file
-        file_path = f'/home/karim/Desktop/Process/MQTT_SERVICE/{file_name}'
+        file_path = f'/home/moustafa/Desktop/process/Process/MQTT_SERVICE/{file_name}'
 
         # Save the binary data as a binary file
         with open(file_path, 'wb') as file:
