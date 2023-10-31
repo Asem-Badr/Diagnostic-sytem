@@ -1,0 +1,11 @@
+{
+    "coolant_sensor_state": 1,
+    "coolant_sensor_value": 2,
+    "oil_pressure_sensor_state": 3,
+    "oil_pressure_sensor_value": 4,
+    "break_wear_sensor_state": 5,
+    "break_fluid_sensor_state": 6,
+    "break_fluid_sensor_value": 7,
+    "ambient_temperature_sensor_value": 8,
+    "rain_sensor_value": 9
+}
