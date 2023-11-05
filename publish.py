@@ -43,3 +43,5 @@ with open('data.json', 'r') as file:
 client.publish("Customer", payload=diagnostic_data, qos=2)
 
 client.loop_stop()
+
+#I used loop_start() and loop_stop() to stop the client from running, but loop_forever() won't close the client
