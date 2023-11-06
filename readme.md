@@ -6,11 +6,13 @@ the project we made is a car info diagnostic system
 * data.json :this file holds the data gathered from the bus
 * publisher.py : this file sends the data from data.json file using mqtt protocol
 * watch_dog.py : this file watches the json file ,each time the file content changes it calls the publisher
-* run.sh : this file the process of running this part of the project
+* run_diagnostic.sh : this file the process of running this part of the project
 
 
 ## how to run this part of the project
-use 'bash run.sh' to run this part of the project
+```bash 
+bash run_diagnostic.sh
+``` 
 
 ## A quick discription of this part of the project 
 we have an I2C data bus which the ECUs of the car are connected to it. The ECUs sends diagnostic data on the bus 
