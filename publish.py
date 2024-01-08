@@ -25,9 +25,9 @@ client.on_connect = on_connect
 # enable TLS for secure connection
 client.tls_set(tls_version=mqtt.client.ssl.PROTOCOL_TLS)
 # set username and password
-client.username_pw_set("Asem123", "12345678")
+client.username_pw_set("example123", "12345678")
 # connect to HiveMQ Cloud on port 8883 (default for MQTT)
-client.connect("cb067f8850e54fc8ad3051e47899ff31.s2.eu.hivemq.cloud", 8883)
+client.connect("example.hivemq.cloud", 8883)
 
 # setting callbacks, use separate functions like above for better visibility
 
